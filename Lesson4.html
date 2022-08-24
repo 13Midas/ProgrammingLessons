@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Lesson # 4</title>
+        <meta charset="utf-8">
+    </head>
+<!--
+    <style>
+        table {
+          border: px solid black;
+          border-collapse: collapse;
+         }
+         tr, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+         }
+    </style>
+-->
+    <!-- Можно написать <table border="1"></table>  
+        будет немного хуже но всё же так легче если без СSS-->
+    <body>
+        <h1>Lesson # 4</h1>
+            <table >
+                <tr style="background: rgb(125, 125, 230);"> <!-- <tr> это строка -->
+                    <th>первая ячейка</th> <!-- <th> это столбец заголовок -->
+                    <th>вторая ячейка</th>
+                    <th>третья ячейка</th>
+                </tr>
+                <tr>
+                    <td rowspan="2">первая ячейка</td> <!-- атрибут rowspan задает количество объедененных ячеек вниз-->
+                    <td colspan="2">вторая ячейка</td> <!-- атрибут colspan задает количество объедененных ячеек справа-->
+            <!--    <td>третья ячейка</td> -->
+                </tr>
+                <tr>
+            <!--    <td>первая ячейка</td> -->
+                    <td>вторая ячейка</td> <!-- <td> это столбец -->
+                    <td style="background: yellow;">третья ячейка</td>
+                </tr>
+            </table>
+        <br>
+        <br>
+            <table >
+                <colgroup>
+            <!--    <col style="background: green" span="3">   --> <!-- задает цвет всем трем колонкам-->
+                    <col>
+                    <col>
+                    <col style="background: red">
+                </colgroup>
+                <tr> 
+                    <th>первая ячейка</th> 
+                    <th>вторая ячейка</th>
+                    <th>третья ячейка</th>
+                </tr>
+                <tr>
+                    <td>первая ячейка</td> 
+                    <td>вторая ячейка</td>
+                    <td>третья ячейка</td>
+                </tr>
+                <tr>
+                    <td>первая ячейка</td>
+                    <td>вторая ячейка</td>
+                    <td>третья ячейка</td>
+                </tr>
+            </table>
+
+    </body>
+</html>

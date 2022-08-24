@@ -1,0 +1,12 @@
+
+p {
+    /*background: yellow !important; - делает стиль главным над всеми остальными */ 
+    background: yellow;  
+    font-size: 20px;
+}
+.one{
+    font-weight: bold;
+}
+h1 {
+    text-align: center;
+}

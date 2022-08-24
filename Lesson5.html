@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Lesson#5</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Lesson # 5</h1>
+        <form action="/" method=""> <!-- action & method - обязательные атрибуты-->
+            <input type="text" name="namePerson" maxlength="12" placeholder="Name"> <!-- type & name - обязательные атрибуты-->
+            <input type="text" name="namePerson" maxlength="16" placeholder="Surname">
+            <input type="password" name="pass" maxlength="20" placeholder="password"><br><br>
+            <input type="reset" name=""><br><br>
+            
+            <label for="no i">Я не бот</label> <input id="no i" type="checkbox" name="1" value="">
+            <label for="sure">точно</label> <input id="sure" type="checkbox" name="1" value="">
+            <label for="promice">ну честно</label> <input id="promice" type="checkbox" name="1" value="">
+            <label for="please">пазязя</label> <input id="please" type="checkbox" name="1" value=""><br><br>
+            
+            Выбери верный вариант:<br>
+            налево пойдешь<input type="radio" name="2"><br>
+            направо пойдешь<input type="radio" name="2"><br>
+            прямо пойдешь<input type="radio" name="2"><br><br>
+           
+            <input type="submit" name="" value="Send"><br><br>
+            <button type="submit">Еще одна кнопка отправить</button><br><br>
+
+            <textarea name="text" cols="20" rows="5" placeholder="Some text here"></textarea><br>
+            <select name="power" size="3" multiple=""> <!-- size - величина окошка, multiple - для выбора нескольких путем нажатия ctrl -->
+                <option>сила</option>
+                <option value="levitation">левитация</option> <!-- value - для передачи на сервер не Левитация, а Levitation -->
+                <option selected="">невидимость</option> <!-- selected - для того чтоб в списке выбора это писалось первым -->
+                <option>скорость</option>
+            </select>
+
+        
+        
+        </form>
+    </body>
+</html>

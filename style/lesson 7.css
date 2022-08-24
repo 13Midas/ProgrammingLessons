@@ -1,0 +1,36 @@
+a:hover {
+    color: red;
+}
+a:active {
+    font-size: 20px;
+    color: red;
+}
+a:link {
+    color:aqua;
+}
+a:visited {
+    color: green;
+}
+p:first-letter { /* будет применено ко всем заглавным буквам параграфа */
+    font-size: 30px;
+    color: red;
+}
+p:first-line {  /* будет применено ко всей первой строке параграфа */
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+input:focus {
+    background: peru;
+    border-color: palevioletred;  
+}
+.test::before {   /*выделить на странице нельзя, в исходном коде не отображается*/
+    content: "Ура";
+}
+.test::after {     /*выделить на странице нельзя, в исходном коде не отображается*/
+    content: "Finish";
+    font-weight: bold;
+}
+::selection {   /* p::selection записав так то будет адресовано только параграфам */
+    color: white;
+    background: pink;
+}

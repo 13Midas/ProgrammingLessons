@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* по горизонтале */
+    align-items: center; /* по вертикале */
+    background-color: violet;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.container h2 {
+    background-color: gray;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 32px;
+    margin-bottom: 24px;
+}
+
+.color {
+    color: powderblue;
+}
+
+.btn {
+    background-color: transparent; /* прозрачный фон */
+    padding: 8px;
+    border: 2px solid #222;
+    border-radius: 5px;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    color: #222;
+    outline: none; /* убирает дефолтное поведение кнопки */
+    cursor: pointer;
+}
+
+.btn:hover {  /* псевдоклас в CSS, при наведении добавляет, меняет стили */
+    background-color: gray;
+    color: white;
+    transition: all 0.275s ease-in; /* добавляет плавности в смену цвета */
+}
