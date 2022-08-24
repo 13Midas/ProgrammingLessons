@@ -7,18 +7,20 @@ const expressionsPlace = document.querySelector('.expressionsPlace');
 class Expression {
     author;
     quote;
+    color;
 
   
-    constructor(author, quote) {
+    constructor(author, quote, color='purple') {
       this.author = author;
       this.quote = quote;
+      this.color = color;
     }
   }
   
   const expressions = [
-    new Expression('В. Бабий', 'Еще одно рево и хватит :)'),
+    new Expression('В. Бабий', 'Еще одно рево и хватит :)', 'green'),
     new Expression('Д. Пашков', 'Неси меня рshajsdhddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddbsadhjcbsdhkjcbsdjhcbsdchsdbchjsbcisucbsiukvhbcskihbsciushовноeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeefffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee!'),
-    new Expression('Д. fff', 'aaa'),
+    new Expression('Д. fff', 'aaa' , 'red'),
   ]
 
   function randomExpressions() {
@@ -27,8 +29,8 @@ class Expression {
 
   button.addEventListener('click', () => {
     const expression = expressions[randomExpressions()]
-    expressionsPlace.innerHTML = expression.quote + '</br>' + expression.author
-    expressionsPlace.style.background = expression.color
+    expressionsPlace.innerHTML = `${expression.quote}</br><span style="color: ${expression.color}">${expression.author}</span>`
+    console.log(`${expression.quote}</br><span style="color: ${expression.color}">${expression.author}</span>`)
     
     //expressionsPlace.textContent = expression.author
 
