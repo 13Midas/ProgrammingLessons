@@ -1,4 +1,4 @@
-//fuck you
+
 
 const button = document.getElementById('btn');
 const expressionsPlace = document.querySelector('.expressionsPlace');
@@ -116,6 +116,7 @@ button.onclick = function(){
 /*
 const button = document.getElementById('btn');
 const expressionsPlace = document.querySelector('.expressionsPlace');
+
 const expressions = ['da','net','mojet',];
 
 function randomExpressions() {
